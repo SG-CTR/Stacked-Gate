@@ -43,7 +43,7 @@ parser.add_argument("--l2", type=float, help="L2 regularization", default=1e-5)
 parser.add_argument("--optim", type=str, default="Adam", help="optimizer type")
 
 # todo main mode
-parser.add_argument("--mode_main", type=str, default="retrain", help="run_ssg, run_original, retrain")
+parser.add_argument("--mode_main", type=str, default="run_ssg", help="run_ssg, run_original, retrain")
 parser.add_argument("--mode_retrain", type=str, default="random", help="random")
 
 
