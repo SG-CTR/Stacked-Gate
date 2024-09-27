@@ -30,7 +30,6 @@ python retrain.py --use_gpu True  --mode_main run_ssg --dataset_path $YOUR_DATAS
         --mlp_dims [1024, 1024, 1024] \
         --optim Adam --learning rate $LR --wd $WD \
         --stacked_num 6 \
-        --alpha $ALPHA \
 ```
 
 ### Run Automatic Stacked Gate(AutoSG)
@@ -47,7 +46,6 @@ python supernet.py --use_gpu True  --mode_supernet random --dataset_path $YOUR_D
         --stacked_num 6 \
         --init_name model_init.pth \
         --save_random_name model_random_train.pth \
-        --alpha $ALPHA \
 ```
 
 Second is evolutionary search:
@@ -60,7 +58,6 @@ python Evolution.py --dataset_path $YOUR_DATASET  \
         --keep_num 0 --crossover_num 10 --mutation_num 10 --m_prob 0.1 \
         --mask_num $Number of Masekd Bits \
         --stacked_num 6 \
-        --alpha $ALPHA \
 ```
 Third is retraining the model:
 ```
@@ -71,7 +68,6 @@ python Retrain.py --use_gpu True  --mode_main retrain --dataset_path $YOUR_DATAS
         --optim Adam --learning rate $LR --wd $WD \
         --mask_num $Number of Masekd Bits \
         --stacked_num 6 \
-        --alpha $ALPHA \
 ```
 
 ### Some important Hyperparameters
