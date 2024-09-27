@@ -59,7 +59,7 @@ python Evolution.py --dataset_path $YOUR_DATASET  \
         --optim Adam --learning rate $LR --wd $WD \
         --keep_num 0 --crossover_num 10 --mutation_num 10 --m_prob 0.1 \
         --mask_num $Number of Masekd Bits \
-        --stacked_num 6 --concat_mlp True \
+        --stacked_num 6 \
         --alpha $ALPHA \
 ```
 Third is retraining the model:
