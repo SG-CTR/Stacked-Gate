@@ -61,7 +61,7 @@ python Evolution.py --dataset_path $YOUR_DATASET  \
 ```
 Third is retraining the model:
 ```
-python Retrain.py --use_gpu True  --mode_main retrain --dataset_path $YOUR_DATASET --compare_with_MSG True \  
+python Retrain.py --use_gpu True  --mode_main retrain --dataset_path $YOUR_DATASET \  
         --model_supernet_name $YOUR_MODEL \
         --batch_size 4096 --search_epoch 30 \
         --mlp_dims [1024, 1024, 1024] \
