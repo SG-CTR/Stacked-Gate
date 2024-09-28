@@ -9,7 +9,7 @@ You can get the datasets in the following website.
 For avazu and criteo datasets, we remove the infrequent features (appearing in less than threshold instances) and treat them as a single feature
 For frappe and movielens datasets, we merge the training, validation and test sets in the source data together as a whole dataset, and according to the ratio of 8:1:1. 
 
-Aavazu: https://www.kaggle.com/c/avazu-ctr-prediction
+Avazu: https://www.kaggle.com/c/avazu-ctr-prediction
 <br/>Criteo: https://labs.criteo.com/2014/02/kaggle-display-advertising-challenge-dataset
 <br/>Frappe: https://github.com/reczoo/BARS/tree/main/datasets/Frappe
 <br/>Movielens: https://github.com/reczoo/BARS/tree/main/datasets/MovieLens
